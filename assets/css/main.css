@@ -1,42 +1,93 @@
 .main{
-  padding: 0;
-  margin: 0;
+ padding: 0;
+ margin: 0;
  background-image: url('images/bg.png');
  background-repeat: no-repeat;
  background-size: 100vw;
- justify-content: flex-end;
 }
+.header{
+  flex-direction: row;
+  align-items: center;
+}
+
 .title{
-  width: 100%;
   margin: 0%;
-  padding: 8%;
+  padding: 8% 8% 2% 8% ;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+  line-height: 21px;　　
 }
+
 .title>.item{
   margin: 5px;
   padding: 5px;
   padding: 0;
- 
+ }
+ .title1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-end;
+  background-color: #FFFFFF;
 }
-.title>.button{
+
+.title1>.button{
   margin: 5px;
-  padding: 8px 5px 0px 5px;
+  padding: 8px;
   text-align: center;
   width:100px;
-  height:30px;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(20%,20%,40%,0.5);
+  font-size: 16px;
+  align-items: center;
+}
+@media all and (max-width: 800px) {
+  .title{
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media all and (max-width: 800px) {
+  .title1>.button{
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 500px) {
+  .title{
+    font-size: 9px;
+    line-height: 13px;
+  }
+}
+@media all and (max-width: 500px) {
+  .title1 {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 500px) {
+  .title1>.button{
+    text-align: center;
+    font-size: 6px;
+    margin: 5px;
+    padding: 8px 5px 0px 5px;
+    text-align: center;
+    width:60px;
+    height:30px;
+  }
 }
 .inner{
-  width: 100%;
   height: 500px;
   margin: 0%;
-  padding: 0px 8%;
+  padding: 8px 8%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  font-size: 18px;
+  justify-content: space-evenly;
 }
+
 .inner>.card{
   display: flex;
   flex-direction: row;
@@ -45,13 +96,30 @@
   margin: 10px 10px;
   padding: 20px;
   height: 80px;
-  width: 240px;
+  width: 340px;
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(20%,20%,40%,0.5);
+  justify-content: space-evenly;
 }
+
+@media all and (max-width: 800px) {
+  .inner>.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 240px;
+    font-size: 14px;
+  }
+}
+
 .inner>.card>.cardd{
   align-items: center;
   margin:10px;
-
+}
+.inner>.card1>.cardd{
+  align-items: center;
+  margin:10px;
 }
